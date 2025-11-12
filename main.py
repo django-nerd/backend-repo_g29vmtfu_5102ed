@@ -22,7 +22,7 @@ def read_root():
 class WaitlistIn(BaseModel):
     email: EmailStr
     name: Optional[str] = None
-    referrer: Optional[str] = None
+    linkedin: Optional[str] = None
     notes: Optional[str] = None
 
 @app.post("/api/waitlist")

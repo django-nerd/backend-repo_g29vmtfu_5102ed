@@ -48,5 +48,5 @@ class Waitlist(BaseModel):
     """
     email: EmailStr = Field(..., description="Email for updates")
     name: Optional[str] = Field(None, description="Optional name")
-    referrer: Optional[str] = Field(None, description="Where did they hear about us")
+    linkedin: Optional[str] = Field(None, description="LinkedIn profile URL (optional)")
     notes: Optional[str] = Field(None, description="Optional notes from the user")
